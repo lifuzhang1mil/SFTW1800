@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFTW & LV+SFTW</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('images/cover3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        text-align: center;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.5); 
+        padding: 20px;
+        z-index: 10; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    }
+
+    .header h1, .header p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content-wrapper {
+        padding-top: 150px;
+        z-index: 1;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    h1, h2, p {
+        margin: 20px 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .content {
+        max-width: 800px;
+        text-align: left;
+        color: white;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    ul {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .content-wrapper::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(128, 128, 128, 0.6);
+        z-index: 5;
+        pointer-events: none; 
+    }
+
+    /* Style for the team images section */
+    .team-images {
+        display: flex;
+        justify-content: space-between; /* Align images horizontally */
+        align-items: center;
+        margin: 20px auto;
+        max-width: 800px; /* Match the text content width */
+    }
+
+    .team-member {
+        text-align: center;
+        margin: 2px;
+    }
+
+    .team-member img {
+        width: 150px; /* Adjust the size as needed */
+        height: 150px;
+        border-radius: 70%; /* Makes the image round */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow to the image */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+
+    .team-member img:hover {
+        transform: scale(1.2); /* Slight zoom effect on hover */
+    }
+
+    .team-member p {
+        margin-top: 10px;
+        color: white; /* Ensures the text color stands out */
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>SFTW & LV+SFTW</h1>
+        <p>Live Restoration of Weather-Degraded Images with 
+Self-Guided Filter based on TransWeather</p>
+
+        <p><strong> 
+            Conrad Challenge 2025: Team 1800</strong></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Tech.html">Technical Details</a></li>
+                <li><a href="comerc.html">Commercial Details</a></li>
+                <li><a href="abtus.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <section id="home">
+            <div class="content">
+
+<h2>SFTW+LV+SFTW 2024 Paper Hyperlink</h2>
+                <a href="images/Documents/SFTW_Finalv1.pdf" target="_blank" rel="noopener noreferrer">Access the SFTW Final PDF</a>
+
+                <h2>Technical Product Abstract</h2>
+                <p>SFTW and LV+SFTW 2024 (Self-guided Filter TransWeather and Live Video
+Plus SFTW) is a strategically evoluted weather-degraded image restoration model
+established on the foundational TransWeather model[1] proposed in 2022, specifically
+targeting to enhance and significantly push the boundaries of the industry to more
+practicality and portability. The base, TransWeather[1], is a "transformer based
+end-to-end model" which implements a streamlined yet efficient "single encoder to
+decoder" network. The encoder utilizes "intra-patch attention" and the decoder with
+"learnable weather embeddings" to remove all weather degradations effectively. This
+enhanced model introduces several key innovations, including integrating a trainable
+self-guided filter layer, critical adjustments to the training framework, and a live
+cam and video processing function to its inference (processing output code), which is
+the industry's pioneer. The self-guided filter layer is designed and implemented to
+amplify the quality of the output images by effectively reducing noise artifacts and
+preserving the processed edges of the image, which is a common issue present in
+existing image restoration models, massively assisting other industries such as object
+detection algorithms, Despite minor enhancements in the quantitative analysis, such as
+PSNR and SSIM values, the introduction of a video and live cam processing usability and
+a guided filter demonstrates the significant potential of this model to advance in this
+field.</p>
+
+<img src="images/WholeModelArchitecture.png" width="800" height="400">
+
+<p>
+The Self-Guided Filter TransWeather (SFTW) model is innovated on the TransWeather model introduced in 2022, designed to restore images degraded by adverse weather conditions. SFTW uses a single encoder-decoder architecture, which processes multiple weather types within a single-unified framework(model). Key Components include:
+</p>
+<img src="images/SummaryDiagram.png" width="800" height="250">
+
+<p>
+<strong>Transformer Encoder</strong>:
+1. Patch Processing: Input images are divided into smaller patches to extract precise features.
+2. Attention Mechanism: The encoder uses multi-head-self-attention to model relationships across different regions of the image, based on global and local features.
+3. Feature Restoration: Outputs are refined using feed-forward-networks to ensure the learned features are relevant for the restoration task.
+</p>
+<img src="images/TransformerEncoder.png" width="500" height="300">
+
+<p>
+<strong>Transformer Decoder</strong>:
+<p>
+1. Weather-Specific-Queries: The decoder used learnable weather embeddings (Queries,Keys,Values)(Q,K,V) to identify and restore specific weather degradation-types (e.g., rain, fog).
+</p>
+<p>
+2. Feature Reconstruction: Combines the encoded-features with weather-specific-queries to restore the clear images. Hierarchical features extracted by the encoder are integrated during this.
+</p>
+<p>
+3. Final Projection: Restored features are upsampled through convolutional layers, outputting the final cleaned image.
+SFTW further enhances the base model with three core innovations:
+</p>
+<img src="images/TransformerDecoder.png" width="320" height="400">
+
+<p>
+<strong>1.Self-Guided Filtering Layer:</strong>
+Filters improves noise removal, edge preservation, and restoration quality of images.Traditional filters works on external references(guide) or pre-defined parameters, making it highly unpractical, but SFTW’s self-guided filter dynamically adjusts and learns its weights during training, within the framework itself with a same filter-effect.
+</p>
+<img src="images/SelfGuidedFilter.png" width="300" height="250">
+<p>
+<strong>2.ResNet50 Backbone:</strong>
+SFTW uses ResNet50’s deeper architecture and residual connections, for more efficient feature extraction. ResNet50 captures both low-level-details(e.g., textures) and high-level abstractions(e.g., light-streaks) better than VGG16, improving overall performance and ability.
+</p>
+<p>
+<strong>3.Real-Time Video Processing Capability:</strong>
+Existing models can only process static images, while SFTW is able to process dynamic frame-streams. This unique feature addresses the requirements of real-world applications requiring immediate visual feedback, and is the first existing model to do this.
+</p>
+
+<p>
+Adverse weather conditions degrade image quality, leading to blurring, reduced-contrast, noise, and blockage of features. Traditional models has limitations, including training on synthetic datasets, weather-specific designs requiring multiple models, and high computational complexity.
+SFTW resolves these pain points by:
+</p>
+
+<p>
+<strong>1. All-in-One Functionality: </strong>SFTW’s base-Transweather uses a single-encoder-decoder design, able to process multiple weather types together, in mixed conditions, where existing methods requires multiple specific-models to be trained.
+</p>
+<p>
+<strong>2. Efficiency:</strong> SFTW has the simplest architecture, which allows it to take up minimal running memory, making it suitable to integrate into less-powerful hardware products everywhere.
+</p>
+<p>
+<strong>3. Practical Usability:</strong> Real-time-video-processing ensures reliable visual feedback in dynamic weather, for time-sensitive applications like autonomous driving.
+</p>
+
+
+<img src="images/StructureComparison.png" width="800" height="400">
+<h3>What Impact Does Your Innovation Create for Individual Users and Humankind?</h3>
+<p>
+SFTW is a significant step forward in making weather-degraded image restoration practical and accessible, bridging the gap between the current stage of academic research and real-word-practicality, aiming to actually benefit human informatics revolution. Its impact extends to individual users, industries, and society:
+</p>
+
+<p>
+<strong>For Individuals:</strong>
+Hobbyists and professionals relying on drones/AR/VR devices benefit from SFTW’s ability to restore image clarity, ensuring a more immersive experience regardless of weather conditions, eg.By removing raindrops stuck-on-camera.
+</p>
+
+<p>
+<strong>For Industries:</strong>
+Autonomous vehicles, surveillance systems, and environmental monitoring applications rely heavily on clear visual inputs. SFTW ensures that adverse weather does not block or degrade such inputs, ensuring safety and reliability.
+</p>
+
+<p>
+<strong>For Humankind:</strong>
+In the future, CV applications are going to be applied everywhere in our lives, and our safety are dependent on their stability. SFTW addresses challenges posed by AI systems in life-critical missions such as search and rescue. SFTW ensures a cleared image input, enables AI systems to make accurate decisions, preventing tragedies and saving lives. It eliminates the major natural-inevitable challenge, ensuring that technology serves humanity’s highest purpose: saving lives and building a safer future for the people.
+</p>
+
+<h3>How Can New or Proprietary Aspects Be Protected and Made Valuable?</h3>
+<p>
+SFTW model itself builds upon the TransWeather base, which is open-sourced, and its proprietary implementation and integration of features can be protected through trade secrets or copyright. We can also add continuous updates to the model to ensure it remains competitive and ahead of market trends, maximizing its long term value, especially to the stage of widespread CV applications.
+</p>
+
+<div class="validation-progress">
+    <h2>Validation</h2>
+    <h3>How Have You Validated the Innovation?</h3>
+    <ul>
+        <li><strong>Patent Submission:</strong> To protect the proprietary aspects of SFTW, we have planned to submit a patent application on the integration of the self-guided filter layer and its implementation within weather-degraded image restoration systems. This ensures the innovation can be commercialized while maintaining its competitiveness, as the self-guided filter is specifically designed to restore image quality and remove noise.</li>
+        <li><strong>Academic Publication:</strong> The CEO/CTO is preparing to submit the research paper to leading journals and conferences in computer vision and AI technologies, including IEEE Transactions on Image Processing and CVPR Proceedings. This aims to contribute to the academic community and further validate the technological advancements of the SFTW model, facilitating knowledge exchange.</li>
+    </ul>
+
+    <h2>Progress</h2>
+    <h3>What Progress Has Been Made in Developing the Innovation?</h3>
+    <ul>
+        <li><strong>Conceptualization:</strong> The innovation began with the idea of addressing the limitations of existing weather restoration models, particularly their inability to process mixed real-world conditions and dynamic frame streams. The self-guided filter was identified as the core component to balance noise reduction and detail preservation.</li>
+        <li><strong>Prototype Development:</strong> The initial integration of the self-guided filter layer into the TransWeather base was the first step. Early prototypes focused on enhancing the single encoder-decoder structure and replacing the VGG16 backbone with ResNet50 for deeper feature extraction and better generalization. Another TransWeather model was trained purely for comparison and optimizing training hyperparameters.</li>
+        <li><strong>Testing and Iteration:</strong> Controlled testing using the same ‘Allweather’ Dataset was performed to evaluate the model’s performance. Metrics like PSNR and SSIM were measured to assess the quality of restored images in terms of noise removal and structural similarity.</li>
+        <li><strong>Real-Time Capability:</strong> A key breakthrough was developing real-time video processing. The concept involves breaking apart a video-feed’s inputs into frames, processing each frame as static images, and combining them back into a video.</li>
+        <li><strong>Application-Specific Testing:</strong> SFTW has not yet been tested under real-life conditions, such as autonomous vehicles. However, the model is guaranteed to process real-world images as it was trained on real-world datasets like Raindrop.</li>
+    </ul>
+</div>
+
+</body>
+</html>

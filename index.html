@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFTW & LV+SFTW</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('images/cover3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        text-align: center;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.5); 
+        padding: 20px;
+        z-index: 10; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    }
+
+    .header h1, .header p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content-wrapper {
+        padding-top: 150px;
+        z-index: 1;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    h1, h2, p {
+        margin: 20px 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .content {
+        max-width: 800px;
+        text-align: left;
+        color: white;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    ul {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .content-wrapper::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(128, 128, 128, 0.6);
+        z-index: 5;
+        pointer-events: none; 
+    }
+
+    /* Style for the team images section */
+    .team-images {
+        display: flex;
+        justify-content: space-between; /* Align images horizontally */
+        align-items: center;
+        margin: 20px auto;
+        max-width: 800px; /* Match the text content width */
+    }
+
+    .team-member {
+        text-align: center;
+        margin: 2px;
+    }
+
+    .team-member img {
+        width: 150px; /* Adjust the size as needed */
+        height: 150px;
+        border-radius: 70%; /* Makes the image round */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow to the image */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+
+    .team-member img:hover {
+        transform: scale(1.2); /* Slight zoom effect on hover */
+    }
+
+    .team-member p {
+        margin-top: 10px;
+        color: white; /* Ensures the text color stands out */
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <h1>SFTW & LV+SFTW</h1>
+        <p>Live Restoration of Weather-Degraded Images with 
+Self-Guided Filter based on TransWeather</p>
+
+        <p><strong> 
+            Conrad Challenge 2025: Team 1800</strong></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Tech.html">Technological Details</a></li>
+                <li><a href="comerc.html">Commercial Details</a></li>
+                <li><a href="abtus.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <section id="home">
+            <div class="content">
+                <p><strong>Team Members:</strong> Lifu Zhang, Claire Xu, Richard Li</p>
+
+                <section id="contents" style="padding: 20px; background-color: rgba(0, 0, 0, 0.7); color: white; text-align: center;">
+    <h2>Contents</h2>
+    <p>Explore the key sections of our project below:</p>
+    <ul style="list-style: none; padding: 0; text-align: left; max-width: 800px; margin: 0 auto;">
+        <li><strong>Technological Details:</strong> Intorduces how the SFTW model works, its innovations, architectural design, and applications. This section includes illustrated diagrams and access to our full technical paper for in-depth understanding.</li>
+        <li><strong>Commercial Details:</strong> A summary of our commercial opportunities, fundraising plan, and business model. For a detailed review, please refer to the Innovation Brief attached in this section.</li>
+        <li><strong>About Us:</strong> Meet the team behind the innovation! This section features our pictures, roles, motivations, and how our shared passion drove us to create the SFTW model.</li>
+    </ul>
+    <p style="margin-top: 20px;">Use the navigation menu above to explore each section in detail.</p>
+</section>
+
+                <h2>What is SFTW?</h2>
+                <p>Our model, <strong>SFTW (Self-Guided Filter TransWeather)</strong>, is a solution designed to <strong>restore weather-degraded images</strong> by <strong>removing noise</strong> and <strong>enhancing clarity</strong> in <strong>complex</strong> and <strong>dynamic extreme weather conditions</strong>. The advanced <strong>LV+SFTW version</strong> has even <strong>better features</strong> including <strong>real-time video processing</strong>, specifically designed for <strong>industries</strong> that require <strong>live, high-quality video inputs</strong> under <strong>complex weather scenarios</strong>.
+</p>
+
+<p>Our innovation, SFTW (Self-Guided Filter TransWeather), is currently the most effective restoration model available, specifically designed to overcome adverse weather conditions on input. It uses advanced transformer base, a new-added self-guided-filtering layer, with real-time video processing capabilities, SFTW restores weather-degraded images to pristine clarity under ALL possible extreme conditions.</p>
+
+<p>The impact of SFTW will extend across industries. For autonomous-vehicles, it will ensure reliable navigation by enhancing sensor visibility under challenging weather. For AR/VR devices like Vision Pro, it significantly improves user experience by restoring clarity on the cameras. Drones and surveillance-systems benefit from the extended live-video functionality, while personal users can now enjoy the freedom of aerial-photography, anywhere+everywhere.</p>
+
+<p>BY 2030, the market for autonomous technologies, AV industries, are projected $2.1 trillion. SFTW has massive business potential to become the standard for weather-degraded image restoration. Practical, strong, and revolutionary- SFTW is the future of tools ensuring safety of computer vision technology.</p>
+
+<video width="640" height="360" controls>
+    <source src="images/SFTW_ConradVideo_Team1800.mp4" type="video/mp4">
+</video>
+<a href="https://youtu.be/VVx3Oe2PHPU?si=VBz_QMaStGw3XFNU" target="_blank">Video YouTube Url</a>
+
+<h2>Our Inspiration </h2>
+
+<img src="images/existmethods.png" width="800" height="350">
+Given the limitations of this research context, this
+work aims to build upon the TransWeather model[1], and
+significantly push its practicality to a next level of this field.
+Self-guided Filter TransWeather (SFTW) and Live Video
+Plus SFTW (LV+ SFTW) aims to act as the pioneer to fill
+in the gap between the current stage of academic research of
+this emerging field of weather-degraded image restoration to
+a practical, appliable and useful model, that could actually
+benefit human informatics revolution, by introducing the
+innovations below:
+
+<img src="images/p1.png" width="800" height="600">
+
+
+
+
+</body>
+</html>

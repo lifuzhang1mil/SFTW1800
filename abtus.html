@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFTW & LV+SFTW</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('images/cover3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        text-align: center;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.5); 
+        padding: 20px;
+        z-index: 10; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    }
+
+    .header h1, .header p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content-wrapper {
+        padding-top: 150px;
+        z-index: 1;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    h1, h2, p {
+        margin: 20px 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .content {
+        max-width: 800px;
+        text-align: left;
+        color: white;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    ul {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .content-wrapper::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: rgba(128, 128, 128, 0.6);
+        z-index: 5;
+        pointer-events: none; 
+    }
+
+    /* Style for the team images section */
+    .team-images {
+        display: flex;
+        justify-content: space-between; /* Align images horizontally */
+        align-items: center;
+        margin: 20px auto;
+        max-width: 800px; /* Match the text content width */
+    }
+
+    .team-member {
+        text-align: center;
+        margin: 2px;
+    }
+
+    .team-member img {
+        width: 150px; /* Adjust the size as needed */
+        height: 150px;
+        border-radius: 70%; /* Makes the image round */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow to the image */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+
+    .team-member img:hover {
+        transform: scale(1.2); /* Slight zoom effect on hover */
+    }
+
+    .team-member p {
+        margin-top: 10px;
+        color: white; /* Ensures the text color stands out */
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>SFTW & LV+SFTW</h1>
+        <p>Live Restoration of Weather-Degraded Images with 
+Self-Guided Filter based on TransWeather</p>
+
+        <p><strong> 
+            Conrad Challenge 2025: Team 1800</strong></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Tech.html">Technical Details</a></li>
+                <li><a href="comerc.html">Commercial Details</a></li>
+                <li><a href="abtus.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <section id="home">
+            <div class="content">
+
+<h2>Formation</h2>
+<p>Our team formed not because of our shared skills, but also due to a deeply impactful experience of one of our friends. A close friend of ours, passionate about drone shooting, attempted to capture stunning images of the beautiful Guizhou Province, for a coursework using a drone. Unfortunately, an unexpected mist blurred out all the images, ruining the opportunity. This incident made us realize how crucial it is to develop a technology than can be present for people to use and overcome these challenges. Our abilities and shared passion for innovation and preventing the disappointments solidified our dedication to create a specialized software to tackle such problems making our team a perfect fit for this competition.</p>
+
+<h2>Our Team: 1800</h2>
+<p><strong>Lifu Zhang (CEO+CTO)</strong></p>
+        <p>CEO, CTO, and Founder of the company. Lifu led all technological aspects of the innovation. He was responsible for creating the entirety of the SFTW model, coming up with the idea, and conducting extensive research to improve image restoration techniques under adverse weather conditions. His vision of aiming to transform technologies to practicality, while ensuring the reliability and constant development of all people, shaped the company and inspired our innovation and teamwork.</p>
+
+<p><strong>Claire Xu</strong></p>
+        <p>She led and planned the strategies for selling our product and attracting investors, ensuring that our innovation reaches our target audience effectively. She also explored how potential technologies and industries that could benefit from this innovation, and establishing connections with companies in sectors that may have interests.</p>
+
+<p><strong>Richard Li</strong></p>
+    <p>Richard led the financial part of our business. He analyzed how we can profit from our innovation and how we can effectively compete with other competitors in the market.</p>
+
+<h2>Our Motivation</h2>
+<p>While our friends' experience with the mist highlighted the need for a better image restoration technology, our concern for the future motivated us to create this innovation the most. In the future, AI will be increasingly used in dangerous missions, such as rescuing, but we feared that adverse weather could impair and mislead AI’s ability to make accurate decisions, such as detection of victim, or surrounding dangers. This fear inspired us to create a solution that can enhance existing weather degrade image restoration techniques, significantly improve the performance in practice, and reduce the computational costs so the model could function effectively in such scenarios where fast decision has to be made. Our big goal is to make an impact on AI rescuing, saving lives of both rescuers and victims and preventing tragedies caused by AI’s unreliability through our innovation.</p>
+
+
+            </div>
+
+    <div class="team-images">
+    <div class="team-member">
+        <img src="images/members/headshotsquare.jpg" alt="Lifu Zhang">
+        <p>Lifu Zhang (CEO+CTO)</p>
+
+    </div>
+    <div class="team-member">
+        <img src="images/members/cx.png" alt="Claire Xu">
+        <p>Claire Xu (CMO)</p>
+    </div>
+
+    <div class="team-member">
+        <img src="images/members/rl.jpg" alt="Richard Li">
+        <p>Richard Li (CFO)</p>
+</div>
+        </section>
+    </div>
+
+
+
+
+</body>
+</html>
